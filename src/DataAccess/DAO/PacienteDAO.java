@@ -1,4 +1,4 @@
-package DataAccess;
+package DataAccess.DAO;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -10,6 +10,7 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
+import DataAccess.SQLiteDataHelper;
 import DataAccess.DTO.PacienteDTO;
 import Framework.PoliSaludException;
 
