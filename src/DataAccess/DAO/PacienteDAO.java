@@ -74,7 +74,7 @@ public class PacienteDAO extends SQLiteDataHelper implements IDAO<PacienteDTO> {
                 + " ,fecha_crea    "
                 + " ,fecha_modifica"
                 + " FROM paciente "
-                + " WHERE estado='A' AND id_paciente = ";
+                + " WHERE estado='A' ";
 
         try {
             Connection conn = openConnection(); // conectar a DB
@@ -112,7 +112,7 @@ public class PacienteDAO extends SQLiteDataHelper implements IDAO<PacienteDTO> {
                 + "telefono, "
                 + "fecha_nacimiento, "
                 + "direccion"
-                + ") VALUES (?)";
+                + ") VALUES (?, ?, ?, ?, ?, ?, ?)";
         try {
             Connection conn = openConnection();
             PreparedStatement pstmt = conn.prepareStatement(query);
