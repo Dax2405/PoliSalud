@@ -8,6 +8,6 @@ public class PoliSaludException extends Exception {
 
     @Override
     public String getMessage() {
-        return "Error en PiliSalud";
+        return "Error en PoliSalud";
     }
 }
