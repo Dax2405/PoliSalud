@@ -1,8 +1,6 @@
 package BusinessLogic.Entities;
-package BusinessLogic;
 
 import java.util.List;
-
 import DataAccess.DAO.PagoMetodoDAO;
 import DataAccess.DTO.PagoMetodoDTO;
 
