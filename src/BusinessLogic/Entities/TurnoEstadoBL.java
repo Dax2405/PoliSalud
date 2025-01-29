@@ -1,9 +1,8 @@
 package BusinessLogic.Entities;
-package BusinessLogic;
 
 import java.util.List;
-import DataAccess.DAO.SexoDAO;
-import DataAccess.DTO.SexoDTO;
+import DataAccess.DAO.TurnoEstadoDAO;
+import DataAccess.DTO.TurnoEstadoDTO;
 
 public class TurnoEstadoBL {
     private TurnoEstadoDTO turnoestado;       
