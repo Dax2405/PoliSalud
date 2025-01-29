@@ -20,7 +20,7 @@ public class SalaBL {
     public boolean create(SalaDTO salaDTO) throws Exception{   
         return saDAO.create(salaDTO);
     }
-    public boolean update(SexoDTO salaDTO) throws Exception{
+    public boolean update(SalaDTO salaDTO) throws Exception{
         return saDAO.update(salaDTO);
     }
     public boolean delete(int idSala) throws Exception{
