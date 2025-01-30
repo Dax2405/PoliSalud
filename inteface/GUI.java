@@ -25,7 +25,6 @@ public class GUI extends JFrame {
         setLocationRelativeTo(null);
         setLayout(new BorderLayout());
 
-        // Panel para el formulario
         JPanel panelFormulario = new JPanel(new GridBagLayout());
         GridBagConstraints gbc = new GridBagConstraints();
         gbc.insets = new Insets(5, 5, 5, 5);
@@ -47,7 +46,6 @@ public class GUI extends JFrame {
             gbc.weightx = 0;
         }
         
-        // Panel para botones
         JPanel panelBotones = new JPanel();
         btnAgregar = new JButton("Agregar");
         btnEditar = new JButton("Editar");
@@ -58,7 +56,6 @@ public class GUI extends JFrame {
         panelBotones.add(btnEliminar);
         panelBotones.add(btnVerTodos);
 
-        // Tabla para mostrar los pacientes
         tableModel = new DefaultTableModel();
         tableModel.addColumn("ID");
         tableModel.addColumn("Nombre");
@@ -72,12 +69,10 @@ public class GUI extends JFrame {
         tablaPacientes = new JTable(tableModel);
         JScrollPane scrollPane = new JScrollPane(tablaPacientes);
 
-        // Añadir componentes a la ventana
         add(panelFormulario, BorderLayout.NORTH);
         add(scrollPane, BorderLayout.CENTER);
         add(panelBotones, BorderLayout.SOUTH);
 
-        // Event listeners para los botones
         btnAgregar.addActionListener(e -> agregarPaciente());
         btnEditar.addActionListener(e -> editarPaciente());
         btnEliminar.addActionListener(e -> eliminarPaciente());
